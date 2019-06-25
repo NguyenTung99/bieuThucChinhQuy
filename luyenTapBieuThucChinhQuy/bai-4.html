@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<script>
+
+    function testPasswold(str) {
+        let regExp = /[^a-zA-Z0-9]/;
+
+        if (regExp.test(str)) {
+            return false;
+        } else  {
+            return true;
+        }
+
+    }
+
+    let nhap = "daylapasswold";
+    alert(testPasswold(nhap));
+    nhap = "#dayla@_passwold";
+    alert(testPasswold(nhap));
+
+</script>
+</body>
+</html>
